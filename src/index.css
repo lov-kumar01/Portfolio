@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+      
+        @keyframes spin-slow {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+        
+        @keyframes zoom {
+          0%, 100% { transform: scale(1); }
+          50% { transform: scale(1.1); }
+        }
+        
+        @keyframes zoom-reverse {
+          0%, 100% { transform: scale(1.1); }
+          50% { transform: scale(1); }
+        }
+        
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        @keyframes width-expand {
+          from { width: 0%; }
+          to { width: var(--target-width); }
+        }
+        
+        .animate-spin-slow {
+          animation: spin-slow 8s linear infinite;
+        }
+        
+        .animate-zoom {
+          animation: zoom 4s ease-in-out infinite;
+        }
+        
+        .animate-zoom-reverse {
+          animation: zoom-reverse 4s ease-in-out infinite;
+        }
+        
+        .animate-fade-in-up {
+          animation: fade-in-up 0.8s ease-out forwards;
+          opacity: 0;
+        }
+        
+        .animate-width-expand{
+          animation: width-expand 2s ease-out forwards;
+        }
+      
