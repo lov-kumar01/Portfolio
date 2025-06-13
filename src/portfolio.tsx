@@ -93,7 +93,7 @@ function Portfolio() {
         <div className="absolute inset-8 rounded-full overflow-hidden bg-gradient-to-br from-blue-600 to-purple-600 p-1 animate-zoom">
           <div className="w-full h-full rounded-full overflow-hidden bg-gray-900">
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+              src="image.jpg"
               alt="Profile"
               className="w-full h-full object-cover animate-zoom-reverse"
             />
@@ -128,7 +128,7 @@ function Portfolio() {
         <div className="space-y-6">
           <div className="overflow-hidden">
             <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-fade-in-up">
-              John Doe
+              Lav Kumar
             </h1>
           </div>
           <div className="overflow-hidden">
@@ -480,7 +480,7 @@ function Portfolio() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold">Email</h3>
-                  <p className="text-gray-300">john.doe@portfolio.dev</p>
+                  <p className="text-gray-300">lovk3050@gmail.com</p>
                 </div>
               </div>
 
@@ -490,7 +490,7 @@ function Portfolio() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold">Phone</h3>
-                  <p className="text-gray-300">+1 (555) 123-4567</p>
+                  <p className="text-gray-300">+91 7250751927</p>
                 </div>
               </div>
 
@@ -500,7 +500,7 @@ function Portfolio() {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold">Location</h3>
-                  <p className="text-gray-300">Remote / Worldwide</p>
+                  <p className="text-gray-300">Gurugram ,Haryana/ Patna,Bihar</p>
                 </div>
               </div>
             </div>
@@ -591,7 +591,7 @@ function Portfolio() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-              John Doe
+              Lav Kumar
             </div>
 
             {/* Desktop Navigation */}
