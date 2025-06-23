@@ -1,4 +1,4 @@
-import  { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import {
   Github,
   Linkedin,
@@ -12,7 +12,7 @@ import {
   Home,
   Briefcase,
   MessageCircle,
-  GitBranch,
+  
   Server,
   Monitor,
   CheckCircle,
@@ -35,15 +35,15 @@ function Portfolio() {
 
   // Skills data
   const skills = [
-    { name: "React", category: "Frontend",  icon: "⚛️" },
-    { name: "TypeScript", category: "Frontend",  icon: "🔷" },
-    { name: "Node.js", category: "Backend",  icon: "🟢" },
-    { name: "Express", category: "Backend",  icon: "🚂" },
-    { name: "MongoDB", category: "Database",  icon: "🍃" },
-    { name: "PostgreSQL", category: "Database",  icon: "🐘" },
-    { name: "Tailwind CSS", category: "Frontend",  icon: "💨" },
-    { name: "Framer Motion", category: "Animation",  icon: "🎭" },
-    { name: "Next.js", category: "Framework",  icon: "▲" },
+    { name: "React", category: "Frontend", icon: "⚛️" },
+    { name: "TypeScript", category: "Frontend", icon: "🔷" },
+    { name: "Node.js", category: "Backend", icon: "🟢" },
+    { name: "Express", category: "Backend", icon: "🚂" },
+    { name: "MongoDB", category: "Database", icon: "🍃" },
+    { name: "PostgreSQL", category: "Database", icon: "🐘" },
+    { name: "Tailwind CSS", category: "Frontend", icon: "💨" },
+    { name: "Framer Motion", category: "Animation", icon: "🎭" },
+    { name: "Next.js", category: "Framework", icon: "▲" },
   ];
 
   
@@ -79,7 +79,7 @@ function Portfolio() {
   };
 
   // Navigate to page
-  const navigateToPage = (pageId : string) => {
+  const navigateToPage = (pageId: string) => {
     setCurrentPage(pageId);
     setIsMenuOpen(false);
   };
@@ -174,7 +174,7 @@ function Portfolio() {
             className="flex justify-center lg:justify-start space-x-6 animate-fade-in-up"
             style={{ animationDelay: "0.8s" }}>
             <a
-              href="#"
+              href="https://github.com/lov-kumar01"
               className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-12">
               <Github size={28} />
             </a>
@@ -184,7 +184,7 @@ function Portfolio() {
               <Linkedin size={28} />
             </a>
             <a
-              href="#"
+              href="mailto:lovk3050@gmail.com"
               className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-12">
               <Mail size={28} />
             </a>
