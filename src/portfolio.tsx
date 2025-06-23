@@ -1,6 +1,5 @@
 import  { useState, useEffect, useMemo } from "react";
 import {
-
   Github,
   Linkedin,
   Mail,
@@ -9,13 +8,18 @@ import {
   Menu,
   X,
   Code,
-
   Globe,
-
   Home,
-
   Briefcase,
   MessageCircle,
+  GitBranch,
+  Server,
+  Monitor,
+  CheckCircle,
+  RefreshCcw,
+  Cloud,
+  Database,
+  Box,
 } from "lucide-react";
 
 function Portfolio() {
@@ -31,17 +35,18 @@ function Portfolio() {
 
   // Skills data
   const skills = [
-    { name: "React", category: "Frontend", level: 90, icon: "⚛️" },
-    { name: "TypeScript", category: "Frontend", level: 85, icon: "🔷" },
-    { name: "Node.js", category: "Backend", level: 88, icon: "🟢" },
-    { name: "MongoDB", category: "Database", level: 82, icon: "🍃" },
-    { name: "Express", category: "Backend", level: 86, icon: "🚂" },
-    { name: "Tailwind CSS", category: "Frontend", level: 92, icon: "💨" },
-    { name: "Framer Motion", category: "Animation", level: 75, icon: "🎭" },
-    { name: "Next.js", category: "Framework", level: 80, icon: "▲" },
+    { name: "React", category: "Frontend",  icon: "⚛️" },
+    { name: "TypeScript", category: "Frontend",  icon: "🔷" },
+    { name: "Node.js", category: "Backend",  icon: "🟢" },
+    { name: "Express", category: "Backend",  icon: "🚂" },
+    { name: "MongoDB", category: "Database",  icon: "🍃" },
+    { name: "PostgreSQL", category: "Database",  icon: "🐘" },
+    { name: "Tailwind CSS", category: "Frontend",  icon: "💨" },
+    { name: "Framer Motion", category: "Animation",  icon: "🎭" },
+    { name: "Next.js", category: "Framework",  icon: "▲" },
   ];
 
-  // Projects data
+  
   
 
 
@@ -227,7 +232,7 @@ function Portfolio() {
                         )) ||
                       (category === "Backend" &&
                         ["Node.js", "Express"].includes(skill.name)) ||
-                      (category === "Database" && skill.name === "MongoDB") ||
+                      (category === "Database" &&["MongoDB","PostgreSQL"].includes(skill.name)) ||
                       (category === "Tools" &&
                         ["Framer Motion", "Next.js"].includes(skill.name))
                   )
@@ -248,10 +253,10 @@ function Portfolio() {
                       <div className="w-full bg-gray-700 rounded-full h-2">
                         <div
                           className="bg-gradient-to-r from-blue-500 to-purple-500 h-2 rounded-full transition-all duration-1000 animate-width-expand"
-                          style={{ width: `${skill.level}%` }}></div>
+                          style={{  }}></div>
                       </div>
                       <p className="text-xs text-gray-400 mt-2 text-center">
-                        {skill.level}%
+                        
                       </p>
                     </div>
                   ))}
@@ -267,14 +272,38 @@ function Portfolio() {
               Additional Expertise
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-gray-300">
-              <div>Git & GitHub</div>
-              <div>RESTful APIs</div>
-              <div>Responsive Design</div>
-              <div>Testing</div>
-              <div>CI/CD</div>
-              <div>Docker</div>
-              <div>AWS</div>
-              <div>GraphQL</div>
+              <div className="flex items-center gap-2 justify-center">
+                <Github size={18} />
+                Git &amp; GitHub
+              </div>
+              <div className="flex items-center gap-2 justify-center">
+                <Server size={18} />
+                RESTful APIs
+              </div>
+              <div className="flex items-center gap-2 justify-center">
+                <Monitor size={18} />
+                Responsive Design
+              </div>
+              <div className="flex items-center gap-2 justify-center">
+                <CheckCircle size={18} />
+                Testing
+              </div>
+              <div className="flex items-center gap-2 justify-center">
+                <RefreshCcw size={18} />
+                CI/CD
+              </div>
+              <div className="flex items-center gap-2 justify-center">
+                <Box size={18} />
+                Docker
+              </div>
+              <div className="flex items-center gap-2 justify-center">
+                <Cloud size={18} />
+                AWS
+              </div>
+              <div className="flex items-center gap-2 justify-center">
+                <Database size={18} />
+                GraphQL
+              </div>
             </div>
           </div>
         </div>
