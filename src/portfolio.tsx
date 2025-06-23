@@ -174,7 +174,7 @@ function Portfolio() {
               <Github size={28} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/lav-kumar-890565241/"
               className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-12">
               <Linkedin size={28} />
             </a>
